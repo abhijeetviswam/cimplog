@@ -58,7 +58,7 @@ void __cimplog(const char *module, int level, const char *msg, ...)
     char buf[MAX_BUF_SIZE];
     int nbytes;
 
-    if (level <= LEVEL_INFO)
+    if (level <= LEVEL_DEBUG)
     {
         va_start(arg_ptr, msg);
         nbytes = vsnprintf(buf, MAX_BUF_SIZE, msg, arg_ptr);
